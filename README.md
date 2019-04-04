@@ -25,9 +25,9 @@
 
 ​      rlp编码对空指针的解码会报错，所以要编码的对象最好不要有指针类型。
 
-​      rlp对[]byte的支持也是，如果某字段是[]byte类型，而且值是nil，那么编码后再解码就会变成非空的：[]byte{}
+​      rlp对`[]byte`的支持也是，如果某字段是`[]byte`类型，而且值是`nil`，那么编码后再解码就会变成非空的：`[]byte{}`
 
-​      rlp不支持time.Duration、int类型支持uint
+​      rlp不支持`time.Duration`、`int`类型, 支持`uint`
 
 ## 超级账本
 
