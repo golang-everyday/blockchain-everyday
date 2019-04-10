@@ -8,6 +8,7 @@
 - 架构组成：
   - Business NetWork Archive(**.bna**)
     - 该.bna文件，是由composer将业务层模型定义、打包所得到的，最终用来部署在fabric生产网络中，快速实现业务功能。
+
     - 其由四个类型文件生成：
       - Model File（**.cto**）：该文件用来定义数据模型。例如资产（Assets）、参与者（Particioants）、交易（Transactions）等。使用其特有的语法（[Modeling Language][id]）
 
@@ -20,7 +21,10 @@
         [id]:https://hyperledger.github.io/composer/latest/reference/acl_language.html
 
       - Query Definitions (**.qry**) ：该文件实现了查询功能。
-    - 图例
+
+    - 图例![Business Network Archive_bna](https://github.com/golang-everyday/blockchain-everyday/blob/master/picture/hyperledger/hyperledger-composer/Business Network Archive_bna.png)
+
+    - 
 
 ![Business Network Archive_bna](https://github.com/golang-everyday/blockchain-everyday/blob/master/picture/hyperledger/hyperledger-composer/Business Network Archive_bna.png)
 
