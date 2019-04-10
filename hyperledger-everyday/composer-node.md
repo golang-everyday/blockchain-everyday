@@ -22,11 +22,8 @@
 
       - Query Definitions (**.qry**) ：该文件实现了查询功能。
 
-    - 图例![Business Network Archive_bna](https://github.com/golang-everyday/blockchain-everyday/blob/master/picture/hyperledger/hyperledger-composer/Business Network Archive_bna.png)
+    - 图例[![Business Network Archive_bna.png](https://i.loli.net/2019/04/10/5cada8bcc4198.png)](https://i.loli.net/2019/04/10/5cada8bcc4198.png)
 
-    - 
-
-![Business Network Archive_bna](https://github.com/golang-everyday/blockchain-everyday/blob/master/picture/hyperledger/hyperledger-composer/Business Network Archive_bna.png)
 
 ![composer应用开发架构](https://github.com/golang-everyday/blockchain-everyday/blob/master/picture/hyperledger/hyperledger-composer/composer应用开发架构.png)
 
