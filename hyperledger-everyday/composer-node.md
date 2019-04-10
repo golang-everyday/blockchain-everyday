@@ -22,9 +22,9 @@
       - Query Definitions (**.qry**) ：该文件实现了查询功能。
     - 图例
 
-![Business Network Archive_bna](https://github.com/golang-everyday/blockchain-everyday/tree/master/picture/hyperledger/hyperledger-composer/Business Network Archive_bna.png)
+![Business Network Archive_bna](https://github.com/golang-everyday/blockchain-everyday/blob/master/picture/hyperledger/hyperledger-composer/Business Network Archive_bna.png)
 
-![composer应用开发架构](https://github.com/golang-everyday/blockchain-everyday/tree/master/picture/hyperledger/hyperledger-composer/composer应用开发架构.png)
+![composer应用开发架构](https://github.com/golang-everyday/blockchain-everyday/blob/master/picture/hyperledger/hyperledger-composer/composer应用开发架构.png)
 
  * 开发环境安装：
 
@@ -94,11 +94,11 @@
 
  * 启动fabric环境（此处以一个fabric示例环境``fabric-dev-servers``为例，进行演示）
 
-    * ```bash
-      mkdir ~/fabric-dev-servers && cd ~/fabric-dev-servers
-      curl -O https://raw.githubusercontent.com/hyperledger/composer-tools/master/packages/fabric-dev-servers/fabric-dev-servers.tar.gz
-      tar -xvf fabric-dev-servers.tar.gz
-      ```
+   * ```bash
+     mkdir ~/fabric-dev-servers && cd ~/fabric-dev-servers
+     curl -O https://raw.githubusercontent.com/hyperledger/composer-tools/master/packages/fabric-dev-servers/fabric-dev-servers.tar.gz
+     tar -xvf fabric-dev-servers.tar.gz
+     ```
 
    * ```bash
      //设置环境变量，下载fabric所需镜像
@@ -133,7 +133,7 @@
 
   * network components（网络组件）
 
-  ![network_components](https://github.com/golang-everyday/blockchain-everyday/tree/master/picture/hyperledger/hyperledger-composer/network_components.png)
+  ![network_components](https://github.com/golang-everyday/blockchain-everyday/blob/master/picture/hyperledger/hyperledger-composer/network_components.png)
 
   * Users
 
