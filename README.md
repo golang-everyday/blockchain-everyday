@@ -36,6 +36,7 @@
 
 ## 超级账本
 
+<<<<<<< Updated upstream
 - fabric 账本搭建坑：
 
   - TLS 问题： 如果发现节点连接不上，或者连接超时， 同时又开启了tls的情况下：
@@ -94,7 +95,11 @@
       * Query Definitions (***.qry***) ：该文件实现了查询功能。
     * 未完待续。。。
 
+=======
+以下是一些关于使用`hyperledger`下项目的经验
+>>>>>>> Stashed changes
 
+[URL](<https://github.com/golang-everyday/blockchain-everyday/tree/master/hyperledger-everyday>)
 
 
 
