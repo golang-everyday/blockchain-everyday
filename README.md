@@ -40,7 +40,7 @@
 
 [URL](<https://github.com/golang-everyday/blockchain-everyday/tree/master/hyperledger-everyday>)
 
-
++ [fabric-raft 1.4.1-rc1](https://github.com/golang-everyday/blockchain-everyday/blob/master/hyperledger-everyday/fabric-raft.md)
 
 ## EOS
 
