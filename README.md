@@ -23,7 +23,8 @@
 
 ### 源码分析
 
-* [钱包账户源码分析](<https://github.com/golang-everyday/blockchain-everyday/blob/master/eth-source-code-analysis/%E9%92%B1%E5%8C%85%E8%B4%A6%E6%88%B7.md>)
+* [钱包架构源码分析](<https://github.com/golang-everyday/blockchain-everyday/blob/master/eth-source-code-analysis/%E9%92%B1%E5%8C%85%E8%B4%A6%E6%88%B7.md>)
+* [通过如何生成一个账户分析源码](https://github.com/golang-everyday/blockchain-everyday/blob/master/eth-source-code-analysis/HowToCreateAccount.md)
 
 ### RLP
 
