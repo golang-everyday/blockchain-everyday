@@ -62,7 +62,7 @@ GenerateKey 通过ecdsa生成私钥
 
 ![image-20190412122035073](https://ws3.sinaimg.cn/large/006tNc79ly1g1zqdv5ac5j30x40b6dmi.jpg)
 
-![image-20190412121513665](/Users/zhengjunling/Library/Application Support/typora-user-images/image-20190412121513665.png)
+![image-20190412121513665](https://ws3.sinaimg.cn/large/006tNc79ly1g1zr3pwcgwj30wi0bkgr4.jpg)
 
 newKeyFromECDSA  通过公钥生成地址
 
