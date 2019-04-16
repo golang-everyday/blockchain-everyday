@@ -35,7 +35,7 @@ $ ./bootstrap.sh
 ```shell
 $ cd ./fabric-samples/first-network/
 # 启动Raft -o 指定共识算法 默认 solo
-$ ./eyfn.sh up -o etchraft
+$ ./byfn.sh up -o etchraft
 ```
 
 ![image-20190410113354145](https://ws3.sinaimg.cn/large/006tNc79ly1g1xdspnw67j311y0esn1x.jpg)
