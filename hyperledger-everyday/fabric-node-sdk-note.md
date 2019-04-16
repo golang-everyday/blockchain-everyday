@@ -1,5 +1,10 @@
 ### fabric-node-sdk
+- 官方示例
 
+  - `fabric-samples/fabcar` 目录下有三种示例, 使用`JavaScript`就可以
+  
+  - `fabric-samples/basic-network` 目录下有连接文件模板, 可以借鉴使用
+  
 - 如果你连不上fabric：
 
   - 绝壁是你的配置文件问题
