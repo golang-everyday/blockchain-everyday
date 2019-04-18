@@ -6,7 +6,7 @@
 
 
 
-![image-20190417202313580](/Users/wangming/Library/Application%20Support/typora-user-images/image-20190417202313580.png)
+![image-20190417202313580](https://ws3.sinaimg.cn/large/006tNc79ly1g26hxav2wfj311y06ijte.jpg)
 
 
 
