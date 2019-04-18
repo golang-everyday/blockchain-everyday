@@ -37,7 +37,7 @@
 
   原因：TxPool 在把 tx add 到 pool 时，会去检验 pool 是否已包含该 tx，如果包含就会丢弃，同时报错。
 
-  解决：不要通过修改 gas 或 gasPrice 去发送一个重复的交易，非要发送重复的交易修改Nonce 。
+  解决：不要通过修改 gas 或 gasPrice 去发送一个重复的交易，非要发送重复的交易修改 Nonce 。
 
 ### 源码分析
 
