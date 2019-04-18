@@ -23,7 +23,7 @@
 
 ### 常见 bug 
 
-- **known transaction :xxxx**
+- `known transaction :xxxx`
 
   场景：外部钱包在调用 rpc 提交交易，如果重复提交相同交易(即交易字段全部一样)，就会出现这个问题。
 
@@ -31,7 +31,7 @@
 
   解决：Transaction 中有一个 Nonce 字段，如果交易内容相同时，Nonce 不同就可以。
 
-- **replacement transaction underpriced**
+- `replacement transaction underpriced`
 
   场景：外部钱包在调用 rpc 提交交易，如果交易内容除了 gas 或 gasPrice 不一样其他都一样时，就会出现这个问题。
 
