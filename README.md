@@ -31,6 +31,14 @@
 
   解决：Transaction 中有一个 Nonce 字段，如果交易内容相同时，Nonce 不同就可以。
 
+- **replacement transaction underpriced**
+
+  场景：外部钱包在调用 rpc 提交交易，如果交易内容除了 gas 或 gasPrice 不一样其他都一样时，就会出现这个问题。
+
+  原因：TxPool 在把 tx add 到 pool 时，会去检验 pool 是否已包含该 tx，如果包含就会丢弃，同时报错。
+
+  解决：不要通过修改 gas 或 gasPrice 去发送一个重复的交易，非要发送重复的交易修改Nonce 。
+
 ### 源码分析
 
 * [钱包架构源码分析](<https://github.com/golang-everyday/blockchain-everyday/blob/master/eth-source-code-analysis/%E9%92%B1%E5%8C%85%E8%B4%A6%E6%88%B7.md>)
