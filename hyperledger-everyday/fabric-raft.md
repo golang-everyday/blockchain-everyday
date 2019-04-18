@@ -1,17 +1,41 @@
-# 基于Fabric1.4.1-rc1搭建Raft
+# 基于Fabric1.4.1搭建Raft
 
-> **下载Fabric1.4.1-rc1镜像**
+> **下载Fabric1.4.1镜像**
 
 ```shell
-$ curl -sSL https://raw.githubusercontent.com/hyperledger/fabric/master/scripts/bootstrap.sh | bash -s 1.4.1-rc1 1.4.1-rc1 0.4.15
+# 下载Fabric源码
+$ git clone https://github.com/hyperledger/fabric.git
+# 切换源码版本 1.4.1
+$ git checkout v1.4.1
+# 编译二进制文件
+$ make configtxgen
+$ make cryptogen
+$ make configtxlator
+# 设置全局访问 将这些二进制文件拷贝到 /usr/local/bin 目录下
+$ sudo cp ./configtxgen ./cryptogen ./configtxlator /usr/local/bin
+
+# 从git上克隆 fabric-samples 项目
+$ git clone https://github.com/hyperledger/fabric-samples.git
+# 下载完后进入fabric-samples文件夹
+$ cd ./fabric-samples
+# 切换 fabric-samples 版本
+$ git checkout v1.4.1
+# 进入 fabric-samples/scripts 文件夹
+$ cd scripts
+# 修改 bootstrap.sh 脚本中的变量为 export VERSION=1.4.1  并执行
+$ ./bootstrap.sh
 ```
+
+![image-20190416105256588](https://ws2.sinaimg.cn/large/006tNc79gy1g24abzqvtjj31040qi0yb.jpg)
+
+
 
 > **进入下载完成的fabric-samples 项目 并启动 Raft**
 
 ```shell
 $ cd ./fabric-samples/first-network/
 # 启动Raft -o 指定共识算法 默认 solo
-$ ./eyfn.sh up -o etchraft
+$ ./byfn.sh up -o etchraft
 ```
 
 ![image-20190410113354145](https://ws3.sinaimg.cn/large/006tNc79ly1g1xdspnw67j311y0esn1x.jpg)
@@ -41,5 +65,6 @@ $ ./eyfn.sh up -o etchraft
 1. 本地配置：用来控制节点的特性，例如TLS配置，备份个数和文件存储。
 2. 通道配置：用来定义raft集群的成员关系，以及raft协议相关的参数，例如心跳间隔、leader节点超时时间等。
 3. 需要注意的是，每个channel有属于它自己的raft集群。因此，在chennel中要指定raft节点，指定的方式是把raft节点的tls证书配置到channel的配置文件中。在系统通道和应用通道中的配置中，每个排序以consenter的形式列出来。下面是**configtx.yaml**中关于raft节点配置的章节。
+4. **必须开启TLS才能使用Raft排序**
 
 ![image-20190410113931347](https://ws4.sinaimg.cn/large/006tNc79ly1g1xdylcz6bj31c00u04as.jpg)
