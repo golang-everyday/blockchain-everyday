@@ -21,16 +21,6 @@
 
 ## 以太坊 
 
-### 常见 bug 
-
-* **known transaction:xxxx**
-
-  场景：外部钱包在调用 rpc 提交交易，如果重复提交相同交易(即交易字段全部一样)，就会出现这个问题。
-
-  原因：TxPool 在把 tx add 到 pool 时，会去检验 pool 是否已包含该 tx，如果包含就会丢弃，同时报错。
-
-  解决：Transaction 中有一个 Nonce 字段，如果交易内容相同时，Nonce 不同就可以。
-
 ### 源码分析
 
 * [钱包架构源码分析](<https://github.com/golang-everyday/blockchain-everyday/blob/master/eth-source-code-analysis/%E9%92%B1%E5%8C%85%E8%B4%A6%E6%88%B7.md>)
@@ -39,7 +29,7 @@
 
 ### RLP
 
-- **以太坊RLP编码的坑**
+- 以太坊RLP编码的坑
   - rlp编码对空指针的解码会报错，所以要编码的对象最好不要有指针类型。
   - rlp对`[]byte`的支持也是，如果某字段是`[]byte`类型，而且值是`nil`，那么编码后再解码就会变成非空的：`[]byte{}`
   - rlp不支持`time.Duration`、`int`类型, 支持`uint`
