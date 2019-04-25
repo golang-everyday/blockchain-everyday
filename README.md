@@ -53,6 +53,7 @@
 
 + [fabric-raft 1.4.1](https://github.com/golang-everyday/blockchain-everyday/blob/master/hyperledger-everyday/fabric-raft.md)
 + [fabric-go-sdk连接Raft加入通道报错](https://github.com/golang-everyday/blockchain-everyday/blob/master/hyperledger-everyday/fabric-sdk-go-连接Raft加入通道时报错.md)
++ [fabric-go-sdk连接Raft初始化链码报错](https://github.com/golang-everyday/blockchain-everyday/blob/master/hyperledger-everyday/fabric-sdk-go-连接Raft初始化链码报错.md)
 
 ## EOS
 
