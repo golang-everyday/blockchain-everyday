@@ -34,7 +34,7 @@
   * curl ->  curl --proxy socks5://127.0.0.1:1081
   * curl --proxy 后面的代理地址 是根据你当前挂的代理地址来的， 如果你走了一遍 privoxy, 那也可以这样写： curl --proxy http://127.0.0.1:8118
 
-* 注意： 设置全局变量 `http_proxy` 对 curl 也是没有效果的
+* 注意： 设置全局变量 `http_proxy` 对 脚本内的 curl 也是没有效果的
 
 * 如果是 虚拟机Ubuntu，那么只需要设置 网络模式 为 桥接，并确保 windows 宿主机开启了 全局代理 即可。原因： PAC 模式下，https://nexus.hyperledger.org/ 是直接访问的，并没有走代理。
 
