@@ -43,6 +43,8 @@
 
 - 如果通过 localhost:8545 能够访问以太坊本机服务，通过本地真实 IP 无法访问，那么需要在启动节点时指定 --rpcaddr "0.0.0.0"。
 
+- web3 不提供远程创建账户的功能，需要本地钱包自己创建，处于安全考虑
+
 ### 源码分析
 
 * [钱包架构源码分析](<https://github.com/golang-everyday/blockchain-everyday/blob/master/eth-source-code-analysis/%E9%92%B1%E5%8C%85%E8%B4%A6%E6%88%B7.md>)
