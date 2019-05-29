@@ -59,6 +59,8 @@
 
   * `sudo vim /etc/privoxy/config`
   * `forward-socks5   /               127.0.0.1:1081   .`  Line 1388， 代理地址和端口按照你的代理软件来设置，保存退出
+  * > 设置局域网代理, 即局域网内所有机器可以通过这台机器走proxy
+  `listen-address  0.0.0.0:8118 ` Line 781, 将监听地址从 127.0.0.1 改为 0.0.0.0 即可
   * `systemctl restart privoxy`  重启服务
 
 * 设置 alias 
