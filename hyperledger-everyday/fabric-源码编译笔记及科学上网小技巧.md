@@ -1,5 +1,3 @@
-[TOC]
-
 ## fabric 账本搭建坑：
 
 - TLS 问题： 如果发现节点连接不上，或者连接超时， 同时又开启了tls的情况下：
@@ -81,12 +79,7 @@
   ISP / 运营商:  it7.net
   City / 城市: Los Angeles California
   Country / 国家: United States
-  IP.GS is now IP.SB, please visit https://ip.sb/ for more information. / IP.GS 已更改为 IP.SB ，请访问 https://ip.sb/ 获取更详细 IP 信息！
-  Please join Telegram group https://t.me/sbfans if you have any issues. / 如有问题，请加入 Telegram 群 https://t.me/sbfans 
-    /\_/\
-  =( °w° )=
-    )   (  //
-   (__ __)//
+
   
   ```
 
@@ -101,14 +94,7 @@
   ISP / 运营商:  ChinaTelecom
   City / 城市: Guangzhou Guangdong
   Country / 国家: China
-  IP.GS is now IP.SB, please visit https://ip.sb/ for more information. / IP.GS 已更改为 IP.SB ，请访问 https://ip.sb/ 获取更详细 IP 信息！
-  Please join Telegram group https://t.me/sbfans if you have any issues. / 如有问题，请加入 Telegram 群 https://t.me/sbfans 
-  
-    /\_/\
-  =( °w° )=
-    )   (  //
-   (__ __)//
-  ```
+
   
 
   
@@ -177,11 +163,11 @@ make docker
 
 a> 修改 `Makefile` 里的 `curl`, 为 `curl` 加上 `-x 代理协议://代理地址:端口` (即 --proxy)
 
-> b> 未验证: 修改 gotools.mk , 将 `go get` 前面加上代理:
->
-> `http_proxy=http://127.0.0.1:8118 go get`
->
-> *这一步骤如果完成了上面的手动添加 gotools, 则不需要再操作*
+~~b> 未验证: 修改 gotools.mk , 将 `go get` 前面加上代理:
+`http_proxy=http://127.0.0.1:8118 go get`
+ *这一步骤如果完成了上面的手动添加 gotools, 则不需要再操作*~~
+ 
+ b方法行不通
 
 
 
